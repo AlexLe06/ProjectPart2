@@ -28,6 +28,11 @@ public class Money {
     // ADD LINES FOR TASK #1 HERE
     // Document and write a copy constructor
 
+    public Money(Money money){
+        dollars = money.dollars;
+        cents = money.cents;
+    }
+
     /**
      * The add method
      *
