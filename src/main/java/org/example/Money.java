@@ -98,7 +98,16 @@ public class Money {
     }
     // ADD LINES FOR TASK #2 HERE
     // Document and write an equals method
+    public boolean equals(Money money) {
+        return (this.dollars == money.dollars && this.cents == money.cents);
+    }
     // Document and write a toString method
+    public String toString() {
+        if (this.cents < 10)
+            return String.format("$%d.0%d", dollars ,cents);
+        else
+            return String.format("$%d.%d", dollars ,cents);
+    }
 }
 
 
