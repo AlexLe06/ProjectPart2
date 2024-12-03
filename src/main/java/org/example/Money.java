@@ -29,8 +29,8 @@ public class Money {
     // Document and write a copy constructor
 
     public Money(Money money){
-        dollars = money.dollars; //Checks money value
-        cents = money.cents; //Check cents value
+        dollars = money.dollars; //Copies money value
+        cents = money.cents; //Copies cents value
     }
 
     /**
