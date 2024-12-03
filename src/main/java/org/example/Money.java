@@ -29,8 +29,8 @@ public class Money {
     // Document and write a copy constructor
 
     public Money(Money money){
-        dollars = money.dollars;
-        cents = money.cents;
+        dollars = money.dollars; //Checks money value
+        cents = money.cents; //Check cents value
     }
 
     /**
@@ -104,7 +104,7 @@ public class Money {
     // Document and write a toString method
     public String toString() {
         if (this.cents < 10)
-            return String.format("$%d.0%d", dollars ,cents);
+            return String.format("$%d.0%d", dollars ,cents); //Return cents if smaller than 10 as .0x
         else
             return String.format("$%d.%d", dollars ,cents);
     }
